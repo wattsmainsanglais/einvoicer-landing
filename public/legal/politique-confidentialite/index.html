@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — einvoicer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #09090b; color: #fafafa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; padding: 2rem 1.5rem; }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    a.back { display: inline-block; font-size: 0.8rem; color: #71717a; text-decoration: none; margin-bottom: 2.5rem; }
+    a.back:hover { color: #a1a1aa; }
+    .brand { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; color: #7c69f5; text-transform: uppercase; margin-bottom: 1rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .updated { font-size: 0.75rem; color: #52525b; margin-bottom: 2rem; }
+    h2 { font-size: 0.85rem; font-weight: 600; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.08em; margin: 2rem 0 0.75rem; }
+    h3 { font-size: 0.8rem; font-weight: 600; color: #fafafa; margin: 1rem 0 0.4rem; }
+    p { font-size: 0.9rem; color: #a1a1aa; margin-bottom: 0.5rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem; }
+    th { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; color: #fafafa; font-weight: 600; border-bottom: 1px solid #27272a; }
+    td { padding: 0.5rem 0.75rem 0.5rem 0; color: #a1a1aa; border-bottom: 1px solid #1c1c1f; vertical-align: top; }
+    ul { list-style: none; padding: 0; }
+    ul li { font-size: 0.9rem; color: #a1a1aa; padding: 0.2rem 0; }
+    ul li strong { color: #fafafa; }
+    a { color: #7c69f5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #27272a; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer a { font-size: 0.75rem; color: #52525b; text-decoration: none; }
+    .footer a:hover { color: #71717a; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/" class="back">← einvoicer</a>
+    <p class="brand">einvoicer</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 9 juin 2026</p>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>Andrew Watts — Auto-entrepreneur</p>
+    <p>Appartement 5, 2 Rue des Écoles, 86250 Charroux, France</p>
+    <p>SIRET : 81996076600023 · Email : awattsdev@gmail.com</p>
+
+    <h2>2. Données collectées</h2>
+    <h3>Données de compte</h3>
+    <p>Adresse email et mot de passe (haché) · Nom et prénom (optionnel)</p>
+    <h3>Données d'entreprise</h3>
+    <p>Raison sociale, numéro SIREN/SIRET, adresse professionnelle · Informations de connexion Super PDP (jetons OAuth2 chiffrés)</p>
+    <h3>Données de facturation</h3>
+    <p>Numéro de facture, intitulé et montant total · Statuts de paiement et historique des transmissions</p>
+    <p style="font-size:0.8rem;color:#52525b;margin-top:0.25rem">Les détails complets de la facture (adresse, email et coordonnées de l'acheteur) sont transmis à Super PDP pour acheminement mais ne sont pas conservés par einvoicer.</p>
+    <h3>Données techniques</h3>
+    <p>Adresse IP, logs de connexion, données de session</p>
+
+    <h2>3. Finalités et bases légales</h2>
+    <table>
+      <thead><tr><th>Finalité</th><th>Base légale</th></tr></thead>
+      <tbody>
+        <tr><td>Création et gestion de compte</td><td>Exécution du contrat</td></tr>
+        <tr><td>Transmission des factures via Peppol</td><td>Exécution du contrat / Obligation légale</td></tr>
+        <tr><td>Envoi d'emails transactionnels</td><td>Exécution du contrat</td></tr>
+        <tr><td>Sécurité et prévention de la fraude</td><td>Intérêt légitime</td></tr>
+        <tr><td>Amélioration du service</td><td>Intérêt légitime</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Destinataires des données</h2>
+    <table>
+      <thead><tr><th>Sous-traitant</th><th>Rôle</th><th>Localisation</th></tr></thead>
+      <tbody>
+        <tr><td>Railway Corp.</td><td>Hébergement API et base de données</td><td>États-Unis (CCT UE)</td></tr>
+        <tr><td>Vercel Inc.</td><td>Hébergement interface utilisateur</td><td>États-Unis (CCT UE)</td></tr>
+        <tr><td>Super PDP</td><td>Transmission au réseau Peppol / DGFiP</td><td>France</td></tr>
+        <tr><td>Brevo (Sendinblue)</td><td>Envoi d'emails transactionnels</td><td>France / UE</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:0.75rem">Vos données ne sont jamais vendues à des tiers ni utilisées à des fins publicitaires.</p>
+
+    <h2>5. Durée de conservation</h2>
+    <table>
+      <thead><tr><th>Catégorie</th><th>Durée</th></tr></thead>
+      <tbody>
+        <tr><td>Données de compte</td><td>Durée de vie du compte + 3 ans après clôture</td></tr>
+        <tr><td>Données de facturation</td><td>10 ans (obligation légale comptable)</td></tr>
+        <tr><td>Logs techniques</td><td>12 mois</td></tr>
+      </tbody>
+    </table>
+
+    <h2>6. Vos droits</h2>
+    <ul>
+      <li><strong>Accès</strong> — obtenir une copie de vos données</li>
+      <li><strong>Rectification</strong> — corriger des données inexactes</li>
+      <li><strong>Effacement</strong> — demander la suppression, sous réserve des obligations légales</li>
+      <li><strong>Portabilité</strong> — recevoir vos données dans un format structuré</li>
+      <li><strong>Opposition</strong> — vous opposer à un traitement basé sur l'intérêt légitime</li>
+      <li><strong>Limitation</strong> — demander la suspension d'un traitement</li>
+    </ul>
+    <p style="margin-top:0.75rem">Pour exercer vos droits : <a href="mailto:awattsdev@gmail.com">awattsdev@gmail.com</a></p>
+    <p style="margin-top:0.5rem">Vous disposez également du droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.</p>
+
+    <h2>7. Sécurité</h2>
+    <p>Les jetons d'accès Super PDP sont chiffrés en base de données. Les communications entre le navigateur, l'API et les services tiers s'effectuent exclusivement via HTTPS.</p>
+
+    <h2>8. Modifications</h2>
+    <p>Cette politique peut être mise à jour. En cas de modification substantielle, vous serez informé par email.</p>
+
+    <div class="footer">
+      <a href="/">einvoicer.fr</a>
+      <a href="/legal/mentions-legales/">Mentions légales</a>
+      <a href="/legal/cgu/">CGU</a>
+    </div>
+  </div>
+</body>
+</html>

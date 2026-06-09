@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CGU — einvoicer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #09090b; color: #fafafa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; padding: 2rem 1.5rem; }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    a.back { display: inline-block; font-size: 0.8rem; color: #71717a; text-decoration: none; margin-bottom: 2.5rem; }
+    a.back:hover { color: #a1a1aa; }
+    .brand { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; color: #7c69f5; text-transform: uppercase; margin-bottom: 1rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .updated { font-size: 0.75rem; color: #52525b; margin-bottom: 2rem; }
+    h2 { font-size: 0.85rem; font-weight: 600; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.08em; margin: 2rem 0 0.75rem; }
+    p { font-size: 0.9rem; color: #a1a1aa; margin-bottom: 0.5rem; }
+    ul { list-style: disc; padding-left: 1.25rem; margin: 0.5rem 0; }
+    ul li { font-size: 0.9rem; color: #a1a1aa; padding: 0.15rem 0; }
+    ul li strong { color: #fafafa; }
+    a { color: #7c69f5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight { background: #18181b; border: 1px solid #27272a; border-radius: 8px; padding: 0.875rem 1rem; margin: 0.75rem 0; font-size: 0.875rem; color: #a1a1aa; }
+    .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #27272a; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer a { font-size: 0.75rem; color: #52525b; text-decoration: none; }
+    .footer a:hover { color: #71717a; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/" class="back">← einvoicer</a>
+    <p class="brand">einvoicer</p>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="updated">Dernière mise à jour : 9 juin 2026</p>
+
+    <h2>1. Objet</h2>
+    <p>Les présentes CGU régissent l'accès et l'utilisation du service einvoicer, édité par Andrew Watts (auto-entrepreneur, SIRET 81996076600023), accessible à l'adresse einvoicer.fr.</p>
+    <p>einvoicer est un service de facturation électronique permettant aux entreprises françaises d'émettre et de transmettre des factures B2B conformes au format EN16931 via la plateforme Super PDP et le réseau Peppol, en conformité avec la réforme de la facturation électronique obligatoire en France.</p>
+
+    <h2>2. Acceptation</h2>
+    <p>L'utilisation du service vaut acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas ces conditions, vous devez cesser d'utiliser le service.</p>
+
+    <h2>3. Accès au service</h2>
+    <p>Le service est accessible aux entreprises et professionnels immatriculés en France disposant d'un numéro SIREN valide. La création d'un compte est réservée aux personnes majeures agissant en capacité professionnelle.</p>
+    <p>L'utilisateur est responsable de la confidentialité de ses identifiants de connexion et de toute activité effectuée depuis son compte.</p>
+
+    <h2>4. Obligations de l'utilisateur</h2>
+    <p>L'utilisateur s'engage à :</p>
+    <ul>
+      <li>Fournir des informations exactes lors de la création de son compte et de ses entreprises</li>
+      <li>S'assurer que le contenu des factures émises est exact, complet et conforme à la législation fiscale française</li>
+      <li>Ne pas utiliser le service à des fins frauduleuses ou contraires à la loi</li>
+      <li>Compléter la vérification d'identité Datakeen requise par Super PDP avant de soumettre des factures en production</li>
+    </ul>
+    <p style="margin-top:0.75rem">L'utilisateur reconnaît être seul responsable du contenu des factures émises via le service.</p>
+
+    <h2>5. Dépendances tierces</h2>
+    <p>einvoicer s'appuie sur des services tiers : <strong style="color:#fafafa">Super PDP</strong> (transmission Peppol / DGFiP), <strong style="color:#fafafa">Railway</strong> (API et base de données), <strong style="color:#fafafa">Vercel</strong> (interface utilisateur), <strong style="color:#fafafa">Brevo</strong> (emails transactionnels).</p>
+    <p>Andrew Watts ne peut être tenu responsable des interruptions, erreurs ou délais imputables à ces services tiers.</p>
+
+    <h2>6. Conformité réglementaire</h2>
+    <div class="highlight">
+      La conformité de l'utilisateur dépend également de la complétude de son inscription auprès de Super PDP (vérification KYC Datakeen incluse). L'utilisation du service seule ne garantit pas la conformité si cette étape n'a pas été finalisée.
+    </div>
+    <p>Andrew Watts ne fournit pas de conseil juridique ou fiscal.</p>
+
+    <h2>7. Disponibilité</h2>
+    <p>Andrew Watts s'efforce d'assurer la disponibilité du service 24h/24 et 7j/7, sans pouvoir garantir une disponibilité ininterrompue.</p>
+
+    <h2>8. Limitation de responsabilité</h2>
+    <p>Dans les limites autorisées par la loi, Andrew Watts ne saurait être tenu responsable :</p>
+    <ul>
+      <li>Des pertes financières résultant d'une erreur dans le contenu d'une facture soumise par l'utilisateur</li>
+      <li>Des retards ou refus de traitement par Super PDP ou la DGFiP</li>
+      <li>Des interruptions de service liées aux infrastructures tierces</li>
+      <li>De la perte de données résultant d'une cause extérieure au service</li>
+    </ul>
+
+    <h2>9. Suspension et résiliation</h2>
+    <p>Andrew Watts se réserve le droit de suspendre ou de résilier un compte en cas de violation des présentes CGU, d'utilisation frauduleuse ou de non-paiement.</p>
+    <p>L'utilisateur peut clôturer son compte à tout moment en contactant <a href="mailto:awattsdev@gmail.com">awattsdev@gmail.com</a>. Les données de facturation sont conservées conformément aux obligations légales.</p>
+
+    <h2>10. Propriété intellectuelle</h2>
+    <p>L'ensemble des éléments constituant le service einvoicer (interface, code, marque) est la propriété d'Andrew Watts. Toute reproduction ou utilisation non autorisée est interdite.</p>
+
+    <h2>11. Modification des CGU</h2>
+    <p>Andrew Watts se réserve le droit de modifier les présentes CGU. Les utilisateurs seront informés par email avec un préavis de 30 jours. La poursuite de l'utilisation du service vaut acceptation des nouvelles conditions.</p>
+
+    <h2>12. Droit applicable</h2>
+    <p>Les présentes CGU sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux du ressort de Poitiers seront seuls compétents.</p>
+
+    <p style="margin-top:2rem;font-size:0.85rem">Contact : <a href="mailto:awattsdev@gmail.com">awattsdev@gmail.com</a></p>
+
+    <div class="footer">
+      <a href="/">einvoicer.fr</a>
+      <a href="/legal/mentions-legales/">Mentions légales</a>
+      <a href="/legal/politique-confidentialite/">Politique de confidentialité</a>
+    </div>
+  </div>
+</body>
+</html>
