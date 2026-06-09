@@ -118,13 +118,20 @@ export default function App() {
           )}
         </div>
 
-        <div style={{ borderTop: '1px solid #27272a', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-          <p style={{ fontSize: '0.75rem', color: '#52525b' }}>
-            einvoicer.fr &mdash; Nouvelle-Aquitaine, France
-          </p>
-          <a href="mailto:awattsdev@gmail.com" style={{ fontSize: '0.75rem', color: '#52525b', textDecoration: 'none' }}>
-            Contact
-          </a>
+        <div style={{ borderTop: '1px solid #27272a', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <p style={{ fontSize: '0.75rem', color: '#52525b' }}>
+              einvoicer.fr &mdash; Nouvelle-Aquitaine, France
+            </p>
+            <a href="mailto:awattsdev@gmail.com" style={{ fontSize: '0.75rem', color: '#52525b', textDecoration: 'none' }}>
+              Contact
+            </a>
+          </div>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <a href="/legal/mentions-legales" style={{ fontSize: '0.75rem', color: '#52525b', textDecoration: 'none' }}>Mentions légales</a>
+            <a href="/legal/politique-confidentialite" style={{ fontSize: '0.75rem', color: '#52525b', textDecoration: 'none' }}>Politique de confidentialité</a>
+            <a href="/legal/cgu" style={{ fontSize: '0.75rem', color: '#52525b', textDecoration: 'none' }}>CGU</a>
+          </div>
         </div>
 
       </div>
