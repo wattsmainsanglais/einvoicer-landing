@@ -118,6 +118,59 @@ export default function App() {
           )}
         </div>
 
+        <div style={{ marginBottom: '3rem' }}>
+          <p style={{ fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em', color: '#52525b', textTransform: 'uppercase', marginBottom: '1.25rem' }}>
+            Common questions
+          </p>
+          {[
+            {
+              q: 'What is all this about? Give me the short version.',
+              a: 'France is digitising its invoicing system. From September 2026, every business with a SIREN must be registered on a government-certified platform to receive electronic invoices. SMEs and micro-enterprises must also start issuing through one from September 2027. This app registers your business and handles the compliance side automatically.',
+            },
+            {
+              q: 'I currently email PDF invoices to my clients. Will I have to stop?',
+              a: 'For B2B invoices (to other registered businesses), emailed PDFs won\'t be compliant from September 2027. This app replaces that workflow — you create the invoice here, it\'s routed compliantly, and you still get a PDF to send alongside it.',
+            },
+            {
+              q: 'Does this affect me if I\'m franchise en base de TVA (TVA-exempt)?',
+              a: 'Yes. The mandate applies to all businesses with a SIREN regardless of TVA status. You\'re still required to be registered on a certified platform to receive invoices from September 2026.',
+            },
+            {
+              q: 'What happens if I don\'t register?',
+              a: 'From September 2026, you won\'t be able to receive compliant e-invoices from other businesses. From September 2027, invoices you issue outside a certified platform will be non-compliant. Penalties are €15 per invoice, up to €15,000 per year.',
+            },
+            {
+              q: 'What does this app actually do for me?',
+              a: 'It connects your business to Super PDP — a government-certified invoicing platform. Create an invoice here, and the app formats it correctly (Factur-X), routes it through the Peppol network, and delivers it to your client\'s platform. You get a PDF copy, can email it to your client, and track the full payment history.',
+            },
+            {
+              q: 'Do I need to set up an account with Super PDP myself?',
+              a: 'No. The app handles the connection for you. You go through a short one-time identity verification (Datakeen — passport or ID required) and a couple of authorisation steps. That\'s it. You don\'t need a direct Super PDP account.',
+            },
+          ].map(({ q, a }) => (
+            <details key={q} style={{ borderBottom: '1px solid #27272a', paddingBottom: '0' }}>
+              <summary style={{
+                padding: '0.875rem 0',
+                cursor: 'pointer',
+                fontSize: '0.875rem',
+                fontWeight: 500,
+                color: '#e4e4e7',
+                listStyle: 'none',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                gap: '1rem',
+              }}>
+                {q}
+                <span style={{ color: '#52525b', fontSize: '1.1rem', flexShrink: 0 }}>+</span>
+              </summary>
+              <p style={{ fontSize: '0.85rem', color: '#71717a', lineHeight: 1.7, padding: '0 0 1rem' }}>
+                {a}
+              </p>
+            </details>
+          ))}
+        </div>
+
         <div style={{ borderTop: '1px solid #27272a', paddingTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
             <p style={{ fontSize: '0.75rem', color: '#52525b' }}>
