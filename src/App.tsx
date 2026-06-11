@@ -33,7 +33,7 @@ export default function App() {
     }}>
       <div style={{ maxWidth: '480px', width: '100%' }}>
 
-        <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', color: '#7c69f5', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
+        <p style={{ fontFamily: "'Audiowide', sans-serif", fontSize: '1.1rem', letterSpacing: '0.05em', color: '#7c69f5', marginBottom: '1.5rem' }}>
           EINVOICER
         </p>
 
